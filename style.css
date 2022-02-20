@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container
+{
+    background: #1c1c1b;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.4em;
+    height: 40rem;
+    width: 370px;
+    animation: colorchange 4s linear infinite;
+}
+.icon
+{
+    position: relative;
+}
+.icon img
+{
+    width: 100px;
+}
+.inputs
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.input1
+{
+    height: 70px;
+    border: none;
+    appearance: none;
+    outline: none;
+    background: #000000;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: .9em;
+    display: flex;
+    padding: 2.5em;
+    color: #fff;
+}
+.input2
+{
+    height: 70px;
+    border: none;
+    appearance: none;
+    outline: none;
+    background: #000000;
+    border-radius: 15px;
+    font-size: .9em;
+    display: flex;
+    padding: 2.5em;
+    color: #fff;
+}
+.fa-envelope
+{
+    position: absolute;
+    z-index: 1;
+    color: #1c1c1b;
+    top: 16%;
+    margin-left: 10px;
+}
+.fa-lock
+{
+    position: absolute;
+    z-index: 1;
+    color: #1c1c1b;
+    top: 72%;
+    margin-left: 10px;
+}
+.btn
+{
+    position: relative;
+    width: 90%;
+    background: #6f00ff;
+    border-radius: 30px;
+}
+.btn button
+{
+    border: none;
+    outline: none;
+    appearance: none;
+    padding: 1.3em;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    background: none;
+}
+.forget
+{
+    color: #6f00ff;
+    position: relative;
+    text-decoration: none;
+}
+
+/* Now Let's Add Animation */
+
+@keyframes colorchange
+{
+    from
+    {
+        filter: hue-rotate(0deg);
+    }
+    to
+    {
+        filter: hue-rotate(270deg);
+    }
+}
